@@ -5,6 +5,7 @@ Responsive, bilingual French / Moroccan Arabic seafood catalogue landing page. B
 ## Before publishing
 
 - The sales email is configured as `mouh@gmail.com`.
+- WhatsApp is configured as `066 190 4855` (international link: `+212 661 904 855`).
 - Replace the example catalogue items and descriptions with the products, species, formats, and availability actually offered.
 - The product photos are illustrative Unsplash images. Replace them with Fishline's own product photography when available.
 - Add the real address, phone/WhatsApp, delivery area, and any verified handling or sourcing details if the business wants them shown.
@@ -19,4 +20,5 @@ Import the GitHub repository and use its root as the project root. Select the st
 - [Unsplash — salmon at seafood market](https://unsplash.com/photos/fresh-salmon-fillets-on-ice-at-seafood-market-2p76q_wVZF4)
 - [Unsplash — prawns](https://unsplash.com/photos/raw-pawn-egfKPm8Sut4)
 - [Unsplash — fresh fish display](https://unsplash.com/photos/fresh-fish-on-display-at-a-market-Mxf_ZWE0LWs)
+
 
