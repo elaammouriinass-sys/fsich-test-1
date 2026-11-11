@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -114,7 +114,7 @@
       <nav class="nav-links" aria-label="Navigation principale">
         <a href="#services" data-fr="Services" data-ar="الخدمات">Services</a><a href="#parcours" data-fr="Parcours" data-ar="المسار">Parcours</a><a href="#faq" data-fr="Questions" data-ar="أسئلة">Questions</a><a href="#contact" data-fr="Contact" data-ar="تواصل">Contact</a>
       </nav>
-      <div class="nav-actions"><button class="lang" id="language" type="button" aria-label="Afficher le site en arabe">عربي</button><a class="btn" href="https://wa.me/4917754665002" target="_blank" rel="noopener noreferrer"><span data-fr="Parler sur WhatsApp" data-ar="تواصل عبر واتساب">Parler sur WhatsApp</span></a></div>
+      <div class="nav-actions"><button class="lang" id="language" type="button" aria-label="Afficher le site en français">FR</button><a class="btn" href="https://wa.me/4917754665002" target="_blank" rel="noopener noreferrer"><span data-fr="Parler sur WhatsApp" data-ar="تواصل عبر واتساب">Parler sur WhatsApp</span></a></div>
     </div>
   </header>
   <main id="accueil">
@@ -182,12 +182,15 @@
   </main>
   <footer><div class="wrap footer-row"><a href="#accueil" class="footer-brand">CONSULTATION & FORMATION DE</a><span class="footer-note" data-fr="Accompagnement et orientation — informations de visa à vérifier auprès des sources officielles." data-ar="مواكبة وتوجيه — تأكد من معلومات الفيزا من المصادر الرسمية.">Accompagnement et orientation — informations de visa à vérifier auprès des sources officielles.</span><span class="footer-note">© <span id="year"></span> Consultation et Formation DE</span></div></footer>
   <script>
-    const languageButton=document.getElementById("language");let currentLanguage="fr";
-    languageButton.addEventListener("click",()=>{currentLanguage=currentLanguage==="fr"?"ar":"fr";document.documentElement.lang=currentLanguage;document.documentElement.dir=currentLanguage==="ar"?"rtl":"ltr";document.querySelectorAll("[data-fr][data-ar]").forEach(el=>{el.innerHTML=el.dataset[currentLanguage]});languageButton.textContent=currentLanguage==="fr"?"عربي":"FR";languageButton.setAttribute("aria-label",currentLanguage==="fr"?"Afficher le site en arabe":"عرض الموقع بالفرنسية")});
+    const languageButton=document.getElementById("language");let currentLanguage="ar";
+    function setLanguage(nextLanguage){currentLanguage=nextLanguage;document.documentElement.lang=currentLanguage;document.documentElement.dir=currentLanguage==="ar"?"rtl":"ltr";document.querySelectorAll("[data-fr][data-ar]").forEach(el=>{el.innerHTML=el.dataset[currentLanguage]});languageButton.textContent=currentLanguage==="ar"?"FR":"عربي";languageButton.setAttribute("aria-label",currentLanguage==="ar"?"Afficher le site en français":"عرض الموقع بالفرنسية")}
+    setLanguage("ar");
+    languageButton.addEventListener("click",()=>setLanguage(currentLanguage==="ar"?"fr":"ar"));
     document.getElementById("year").textContent=new Date().getFullYear();
   </script>
 </body>
 </html>
+
 
 
 
