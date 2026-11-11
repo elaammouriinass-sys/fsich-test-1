@@ -76,7 +76,10 @@
     .footer-brand{color:#F0C753}
     :focus-visible{outline-color:#D2A22B}
     @media(max-width:650px){header{background:rgba(7,26,51,.98)}}
-  </style>
+      .hero-photo img,.photo-card img{will-change:transform;animation:slowPhotoDrift 20s ease-in-out infinite alternate}
+    @keyframes slowPhotoDrift{0%{transform:scale(1.06) translateX(-.8%)}100%{transform:scale(1.12) translateX(.8%)}}
+    @media(prefers-reduced-motion:reduce){.hero-photo img,.photo-card img{animation:none;transform:none}}
+</style>
 </head>
 <body>
   <div class="topline"><div class="wrap"><span data-fr="Accompagnement pour votre projet de formation professionnelle en Allemagne" data-ar="مواكبة لمشروع التكوين المهني ديالك فألمانيا">Accompagnement pour votre projet de formation professionnelle en Allemagne</span><span class="meta"><a href="mailto:MO@mail.de">MO@mail.de</a></span></div></div>
@@ -163,6 +166,7 @@
   </script>
 </body>
 </html>
+
 
 
 
