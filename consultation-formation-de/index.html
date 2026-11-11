@@ -84,6 +84,10 @@
     @keyframes fullHeroDrift{0%{background-position:0 0,47% 47%}100%{background-position:0 0,54% 53%}}
     @media(max-width:650px){.hero{min-height:calc(100svh - 67px);padding:42px 0;background-position:0 0,55% 50%}}
     @media(prefers-reduced-motion:reduce){.hero{animation:none;background-position:0 0,50% 50%}}
+    .photo-card img{animation:servicePhotoSail 15s ease-in-out infinite alternate;transform-origin:center}
+    .photo-card:nth-child(2) img{animation-delay:-4s}.photo-card:nth-child(3) img{animation-delay:-8s}.photo-card:nth-child(4) img{animation-delay:-2s}.photo-card:nth-child(5) img{animation-delay:-6s}.photo-card:nth-child(6) img{animation-delay:-10s}
+    @keyframes servicePhotoSail{0%{transform:scale(1.08) translateX(-2%);object-position:45% 50%}100%{transform:scale(1.13) translateX(2%);object-position:56% 50%}}
+    @media(prefers-reduced-motion:reduce){.photo-card img{animation:none;transform:none}}
 </style>
 </head>
 <body>
@@ -171,6 +175,7 @@
   </script>
 </body>
 </html>
+
 
 
 
