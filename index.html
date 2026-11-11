@@ -22,6 +22,10 @@
     .hero-grid{display:block;position:relative;width:min(1240px,calc(100% - 52px));min-height:740px;margin:0 auto;padding:88px 0;z-index:1}
     .hero-copy{max-width:730px;padding:20px 0}.hero-copy .eyebrow{color:var(--lime)}.hero-copy h1{color:#fff}.hero-copy h1 em{color:var(--lime)}.hero-copy>p{color:#eef5f2}.hero-copy .link-arrow{color:#fff}.hero-note{color:#eef5f2}.note-icon{border-color:#d3e6de;color:var(--lime)}.hero-visual{display:none}
     @media(max-width:680px){.hero-grid{width:calc(100% - 32px);min-height:680px;padding:70px 0}.hero-copy{padding:8px 0}}
+
+    .hero{background-size:100% 100%,108% auto;background-position:0 0,50% 54%;animation:boatSail 24s ease-in-out infinite alternate}
+    @keyframes boatSail{0%{background-position:0 0,47% 53%}50%{background-position:0 0,53% 57%}100%{background-position:0 0,49% 54%}}
+    @media(prefers-reduced-motion:reduce){.hero{animation:none}}
 </style>
 </head>
 <body>
